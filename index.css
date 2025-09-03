@@ -1,0 +1,165 @@
+body{
+            font-family: 'Arial Narrow Bold', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #333;
+            color: #fff;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            animation: slideInLeft 1s ease-in-out;
+        }
+        .logo img{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+        .nav ul{
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+        .nav ul li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 18ox;
+            transition: color 0.3s ease;
+        }
+        .nav ul li a:hover{
+            color: #ff9800;
+        }
+        section{
+            padding: 60px 40px;
+            text-align: center;
+            animation: fadeInUp 1s ease-in-out;
+
+        }
+
+        .about h1{
+            font-size: 36px;
+            margin-bottom: 20px;
+            animation: zoomIn 1s ease-in-out;
+        }
+        .about-content{
+            display: flex;
+            align-items: center;
+            -ms-grid-row-span: 20px;
+            justify-content: center;
+            flex-wrap:wrap;
+        }
+        .about-content img{
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            animation: fadeInLeft 1. 5s ease-in-out;
+        }
+        .about-content p{
+            font-size: 18px;
+            max-width: 500px;
+        }
+        .contact form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+            margin: 0 auto;
+            animation: fadeInLeft 1. 5s ease-in-out;
+        }
+        .contact input, .contact textarea, .contact button{
+            padding: 10px;
+            font-size: 16px;
+        }
+        .contact button{
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact button:hover{
+            background-color: #ff9800;
+        }
+        .newsletter form{
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            animation: fadeInRight 1. 5s ease-in-out;
+        }
+        .newsletter input{
+            padding: 10px;
+            font-size: 16px;
+        }
+        .newsletter button{
+            padding: 10px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .newsletter button:hover{
+            background: #ff9800;
+        }
+        footer{
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            background-color: #333;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from{opacity: 0;} to 
+            {opacity: 1;}
+        }
+        @keyframes slideInleft {
+            from{
+                opacity: 0;
+                transform: translateX(-100px);
+            } to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            } to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLeft{
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            } to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            } to {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
